@@ -17,7 +17,7 @@ export default function PixelCanvas({
     const gridData = new Array(size).fill(1);    
     const gridSize = Math.sqrt(size)
 
-    const drawPixel = (e) => {
+    const drawPixel = (e: any) => {
         const pixelId = e.target.id
         if (pixelId != lastPixelId.current) {
             e.target.style.backgroundColor = color;
