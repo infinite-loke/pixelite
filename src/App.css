@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.sortable-handler {
+  touch-action: none;
+}
