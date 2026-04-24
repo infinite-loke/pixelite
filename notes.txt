@@ -1,0 +1,22 @@
+
+4. That number based pixel boxes
+x. Save pixel art option.
+x. border color should reflect to the pixel color
+x. variable canvas size portrait, 
+5. Save draft in localstorage
+x. Add a "beforeunload" event prevent user from close the tab or leave
+x. select: with hold of control and mouse select then change color.
+UI: https://cdn.dribbble.com/userupload/38041226/file/original-0f1f0ce119d892c78d3dd38960171534.png?resize=752x&vertical=center
+x. Adjacent square brush size logic.
+
+What if / Big picture
+x. Auto Draw: how about auto draw using AI (Experiment)
+x. select: with shapes
+2. How about downloading the pixelart
+3. Ai based pixel art generation. 
+5. Add a custom image and apply colors within it.
+
+done
+1. Add ctrl + z fallback logic
+2. Standard colors + color picker
+3. Actions: clear, fill, select pixelart

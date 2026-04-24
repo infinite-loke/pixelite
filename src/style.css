@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --primary-slate: #314158;
+  --seconday-slate: #45556c;
+  --checked-bg-odd: #e0e0e0;
+  --checked-bg-even: #fff;
+  --checked-bg-size: 40px;
+}
+
+/* =============== Canvas Styles ============= */
+
+#canvas.checked-background {
+  background-image: conic-gradient(
+    var(--checked-bg-odd) 25%, 
+    var( --checked-bg-even) 25% 50%, 
+    var(--checked-bg-odd) 50% 75%, 
+    var( --checked-bg-even) 75%
+  );
+  background-size: var(--checked-bg-size) var(--checked-bg-size); /* Size of one full 2x2 check unit */
+}
+
+#canvas.mode-symmetry::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px; /* Length of the line */
+  height: 100%;
+  background-image: linear-gradient(var( --seconday-slate) 50%, transparent 0%);
+  background-position: right;
+  background-size: 2px 10px;
+  background-repeat: repeat-y;
+}
+
+/* ============ Atom Styles ================ */
+
+.icon-button {
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.icon-button.active {
+  background-color: var(--secondary-slate);
+}
+
+.square-slider-thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0.2rem;
+  width: 1rem;
+  height: 1rem;
+  background: var(--primary-slate);
+  cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch { 
+  border: 1px solid var(--secondary-slate); 
+  border-radius: 0.4rem; 
+}
